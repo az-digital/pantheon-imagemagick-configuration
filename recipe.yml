@@ -11,3 +11,4 @@ config:
     imagemagick.settings:
       simple_config_update:
         quality: 92
+        prepend: '-limit memory 64MiB'
