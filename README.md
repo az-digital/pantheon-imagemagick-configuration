@@ -24,6 +24,14 @@ To do everything that this recipe does without the recipe, use `drush config:set
 ```
 drush en -y imagemagick
 drush config:set imagemagick.settings quality 92
-### Probably won't work 👇
-drush config:set imagemagick.settings prepend "-limit memory 64MiB"
+```
+### Set the configuration in lando
+```
+echo "-limit memory 128MiB" | lando drush config:set imagemagick.settings prepend - -y
+```
+
+### Set the configuration with terminus
+
+```
+echo "-limit memory 128MiB" | terminus drush config:set imagemagick.settings prepend - -y
 ```
