@@ -18,3 +18,9 @@ composer require "drush/drush:13.2.0 as 12.4.3"
 ```
 lando drush recipe ../recipes/pantheon-imagemagick-configuration
 ```
+
+
+To do everything that this recipe does without the recipe, use `drush config:set`
+drush en -y imagemagick
+drush config:set imagemagick.settings:quality 92
+drush config:set imagemagick.settings:prepend '-limit memory 64MiB'
