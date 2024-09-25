@@ -23,6 +23,7 @@ lando drush recipe ../recipes/pantheon-imagemagick-configuration
 To do everything that this recipe does without the recipe, use `drush config:set`
 ```
 drush en -y imagemagick
-drush config:set imagemagick.settings:quality 92
-drush config:set imagemagick.settings:prepend '-limit memory 64MiB'
+drush config:set imagemagick.settings quality 92
+### Probably won't work 👇
+drush config:set imagemagick.settings prepend "-limit memory 64MiB"
 ```
