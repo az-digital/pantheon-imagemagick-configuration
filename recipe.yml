@@ -1,0 +1,13 @@
+name: 'Pantheon Imagemagick Configuration'
+description: 'Installs and configures Imagemagick for Pantheon site that use Drupal.'
+type: 'System'
+install:
+  - imagemagick
+config:
+  actions:
+    system.image:
+      simple_config_update:
+        toolkit: imagemagick
+    imagemagick.settings:
+      simple_config_update:
+        quality: 92
