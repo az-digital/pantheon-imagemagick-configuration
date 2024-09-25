@@ -1,0 +1,10 @@
+{
+    "name": "az-digital/pantheon-imagemagick-configuration",
+    "description": "Installs and configures Imagemagick for Pantheon sites using Drupal.",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/imagemagick": "*"
+    }
+}
